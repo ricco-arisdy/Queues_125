@@ -35,7 +35,13 @@ namespace Queues_125
             }
             else
             {
-                
+                /* if REAR is at the last position of the array, then the values of
+                 REAR is set to 0 that corresponds to the frist position of the array.*/
+                if (REAR == max - 1)
+                    REAR = 0;
+                else;
+                /* if REAR is not at the last position, then its values is increented by one */
+                REAR = REAR + 1;
             }
         }
         static void Main(string[] args)
