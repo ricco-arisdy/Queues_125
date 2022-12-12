@@ -78,6 +78,24 @@ namespace Queues_125
         {
             int FRONT_position = FRONT;
             int REAR_position = REAR;
+
+            /* Checks if the queue is empty*/
+            if (FRONT == -1)
+            {
+                Console.WriteLine("Queue is Empty\n");
+                return;
+            }
+            Console.WriteLine("\nElement in the queue are .................................\n");
+            if (FRONT_position <= REAR_position)
+            {
+                /* traverses the queue till the last element present is an array*/
+                while (FRONT_position <= REAR_position)
+                {
+                    Console.Write(queues_array[FRONT_position] + " ");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
+            }
         }
         static void Main(string[] args)
         {
