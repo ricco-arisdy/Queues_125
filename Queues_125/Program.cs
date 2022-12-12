@@ -43,6 +43,8 @@ namespace Queues_125
                 /* if REAR is not at the last position, then its values is increented by one */
                 REAR = REAR + 1;
             }
+            /* if REAR is not at the last position, then element is added at it's proper place */
+            queues_array[REAR] = element;
         }
         static void Main(string[] args)
         {
