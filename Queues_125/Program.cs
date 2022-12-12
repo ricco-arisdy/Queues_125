@@ -18,6 +18,14 @@ namespace Queues_125
             FRONT = -1;
             REAR = -1;
         }
+        public void insert(int element)
+        {
+            /*This statment checks for the overlow condition */
+            if ((FRONT == 0 &&  REAR ==  max -1 ) || (FRONT == REAR +1))
+            {
+                Console.WriteLine("\nQueue overlow\n");
+            }
+        }
         static void Main(string[] args)
         {
         }
