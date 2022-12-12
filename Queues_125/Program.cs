@@ -26,6 +26,17 @@ namespace Queues_125
                 Console.WriteLine("\nQueue overlow\n");
                 return;
             }
+            /*This following statment checks wheter the queue is empty, if the queue *
+             * then the values of the REAR and FRONT variables is set to 0*/
+            if (FRONT == -1)
+            {
+                FRONT = 0;
+                REAR = 0;
+            }
+            else
+            {
+                
+            }
         }
         static void Main(string[] args)
         {
